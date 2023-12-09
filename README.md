@@ -8,18 +8,16 @@ The game consists of a board where Mario moves and tries to avoid colliding with
 
 ## Screenshots
 
-<a href="https://krsnamara.github.io/mario-kart-css-animation/">
+<a href="https://krsnamara.github.io/flappy-mario-kart/">
 Start Screen
   <img src="public/img/startscreen.png">
 </a>
 <br>
 
-<a href="https://krsnamara.github.io/mario-kart-css-animation/">
+<a href="https://krsnamara.github.io/flappy-mario-kart/">
 Game Over
   <img src="public/img/gameover.png">
 </a>
-
-[![GameOver](https://example.com/live-page/gameover.png)](https://krsnamara.github.io/mario-kart-css-animation/)
 
 ## Video
 
