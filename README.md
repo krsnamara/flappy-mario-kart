@@ -10,13 +10,13 @@ The game consists of a board where Mario moves and tries to avoid colliding with
 
 <a href="https://krsnamara.github.io/flappy-mario-kart/">
 Start Screen
-  <img src="public/img/startscreen.png">
+  <img src="/img/startscreen.png">
 </a>
 <br>
 
 <a href="https://krsnamara.github.io/flappy-mario-kart/">
 Game Over
-  <img src="public/img/gameover.png">
+  <img src="/img/gameover.png">
 </a>
 
 ## Video
