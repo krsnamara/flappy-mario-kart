@@ -1,0 +1,14 @@
+html,
+body {
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  margin-top: 5px;
+}
+
+/* // JAVASCRIPT TUTORIAL // */
+#board {
+  /* background-color: skyblue; */
+  background-image: url('/img/background.png');
+}
