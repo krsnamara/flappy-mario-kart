@@ -70,9 +70,35 @@ window.onload = function () {
   })
 }
 
+// Save the score to local storage
+function saveScore() {
+  const highScore = localStorage.getItem('highScore')
+  if (highScore === null || score > parseInt(highScore)) {
+    localStorage.setItem('highScore', score.toString())
+  }
+}
+
+// Retrieve the score from local storage
+function getHighScore() {
+  const highScore = localStorage.getItem('highScore')
+  if (highScore === null) {
+    return 0
+  }
+  return parseInt(highScore)
+}
+
 function update() {
   requestAnimationFrame(update)
+
   if (gameOver) {
+    saveScore() // Save the score to local storage
+
+    // Display the high score
+    const highScore = getHighScore()
+    context.fillStyle = 'black'
+    context.font = '30px Impact'
+    context.fillText(`High Score: ${highScore}`, 250, 300)
+
     return
   }
   context.clearRect(0, 0, board.width, board.height)
@@ -131,6 +157,12 @@ function update() {
   context.fillStyle = 'white'
   context.font = '45px sans-serif'
   context.fillText(score, 20, 50)
+
+  // High Score
+  const highScore = getHighScore()
+  context.fillStyle = 'white'
+  context.font = '25px sans-serif'
+  context.fillText(`High Score:  ${highScore}`, 20, 100)
 
   if (gameOver) {
     context.fillStyle = 'black'

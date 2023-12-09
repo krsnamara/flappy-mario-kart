@@ -1,4 +1,4 @@
-# Project Name
+# Mario-Kart
 
 This project is a simple animation game featuring Mario and shells.
 
